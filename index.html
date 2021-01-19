@@ -3,115 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexboxen</title>
+    <title>Portfilio</title>
 
-    <Style>
-        .header-1{
-            display: flex; 
-            justify-content: center;
+<style>
 
-}
+    #top{
+        background: url(stockface2.jpg); 
+        background-repeat: no-repeat;
+        width: 1024px;
+        height: 300px;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        background-size: cover;
+        background-position: center;
 
-        .header-element1 {
-            background: rgb(151, 151, 153);
-            flex: 1;
-            flex-grow: 1;
+    }
 
-        }
-
-        .header-element2 {
-            background: rgb(106, 106, 107);
-            flex: 2;
-            flex-grow: 2;
-
-        }
-
-        .header-element3 {
-            background: rgb(51, 51, 51);
-            flex: 1;
-            flex-grow: 1;
-            list-style: none;
-            display: inline-block;
-         
-        }
-
-        .header-2{
-            display: flex;
-            justify-content: center;
-
-        }
-
-        .header-element4 {
-            background: rgb(151, 151, 153);
-            flex-grow: 1;
-
-        }
-
-        .header-element5 {
-            background: rgb(99, 99, 100); 
-            flex-grow: 1;
-
-
-        }
-
-        .main{
-            display: flex;
-            justify-content: center;
-
-        }
-        .left{
-            display: flex;
-            background-color: brown;
-            flex-grow: 1;
-    
-        }
-
-        .right{
-            background-color: burlywood;
-            flex-grow: 1;
-        }
+    .logo{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        padding: 40px;
         
-        /*@media screen and ( max-width: 500px ) {
-     CSS-Anweisungen für Bildschirmbreiten bis maximal 500 Pixel */
+    }
 
-    </Style>
+    .navigation {
+        text-align: right;
+        font-size: 20px;
+        height: 55px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(255, 255, 255); 
+        opacity: 60%;
+       
+    }
+
+    .dropdown-content{
+        display: none;
+        z-index: 1;
+        position: absolute;
+
+
+    }
+
+    .dropdown{
+        position: relative;
+        display: inline-block;  
+
+    }
+
+    .dropdown-content a{
+       display: block;
+      
+       
+
+    }
+
+    .dropdown:hover .dropdown-content{
+        display: block;
+
+
+    }
+
+    a{
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        margin: 10px;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgb(177, 96, 3);
+    
+    }
+
+    .navigation a:hover {
+        background-color: rgb(214, 134, 5);
+    }
+
+    .icons{
+        display:flex;
+        justify-content: right;
+        width: 100%;
+
+    }
+
+    .icons img{
+        height: 50px;
+        width: 50px;
+        margin-top: -20px;
+    }
+
+    .flex-main-top{
+       color:white;
+       font-family: Arial, Helvetica, sans-serif;
+       display: flex;
+       justify-content: space-around;
+       align-items: flex-start;
+       background-color:rgb(177, 96, 3);
+       width: 1024px;
+       height: auto;
+       border-radius: 10px;
+       margin: 10px;
+       padding: 10px;
+       
+     
+    }
+     
+   .flex-main{
+       color:white;
+       display: flex;
+       justify-content: space-around;
+       align-items: flex-start;
+       background-color: rgb(175, 90, 10);
+       width: 1024px;
+       height: auto;
+       border-radius: 10px;
+       margin: 10px;
+       padding: 10px;  
+       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   }
+
+   .flex-main2{
+       color: white;
+       background-color: rgb(167, 84, 6);
+       display: flex;
+       justify-content: space-around;
+       align-items: flex-start;
+       flex-direction:row-reverse;
+       width: 1024px;
+       height: auto;
+       margin: 10px;
+       border-radius: 10px;  
+       padding: 10px;
+       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  
+   }
+
+   .flex-item span{
+       font-size: 23px;
+       font-weight: bold;
+    
+   }
+
+</style>
 
 </head>
-<body><div class="header-1">
-        <div class="header-element1">
-            <img src="image_portfolio.png" alt="">
+<body>
+<div id="top">
+
+    <div class="logo">
+        <h1>Portfolio </h1>
+    </div>
+    
+
+    <div class="navigation">
+        <div>
+            <a href="">Startseite</a>
+            <a href="">About Me</a>
+
+            <div class="dropdown">
+                <a class="dropbtn">Projects</a>
+
+                <div class="dropdown-content">
+                    <a href="#project1">Project1</a>
+                    <a href="#project2">Project2</a>
+        
+                </div>
+
+            </div>
+            
+
+            <a href="">Contact</a>
+
+            <div class="icons">
+                <a href="http://www.facebook.com">
+                    <img src="fbicon.png" alt=""></a>
+                <a href="http://www.instagram.com">   
+                    <img src="instaicon.png" alt=""></a>
+                <a href="mailto:r.degering@mail.de">   
+                    <img src="emailicon.jpeg" alt=""></a>
+                     
+            
+            </div>
         </div>
-        <div class="header-element2">
-            Degis Portfilio
-        </div>
-        <div class="header-element3">            
-            <div ul>
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            <li></li>
-
-        </ul>
-
-    </div></div>
-    </div>   
-
-    <div class="header-2">
-        <div class="header-element4">4</div>
-        <div class="header-element5">
 
     </div>
 
-    <div class="main">
-        <div class="left">
-            <div class="preview">
-            <img src="dinosaur.jpg" width="300" height="auto" alt="dino">
-         
-            <div class="right"> 
-            <div class="right_element">Right Element</div>
-    </div>  
-    </div> 
 </div>
+
+<div class="main">
+        <div class="flex-main-top">
+            <h2>Its Me !</h2>
+            
+            <p>News, Stuff, Sessions and More!<br>
+                 
+            </p>
+            
+        </div>
+
+        <div class="flex-main" id="project1">
+                <div class="flex-item">
+                    <img src="dinosaur.jpg" height="300" width="auto" alt="dino">
+                    <p>Hier stehen Infos zum Bild</p>
+                    
+                </div>
+
+                <div class="flex-item">
+                    <span>  My Work # 1.</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente minima laboriosam perferendis 
+                        quaerat unde nobis consequatur officia eius eaque eos enim dignissimos nostrum similique praesentium, dolore tempora doloribus voluptatum.</p>
+                    
+                </div>
+
+        </div>
+
+        <div class="flex-main2" id="project2">
+            <div class="flex-item2">
+                <img src="dinosaur.jpg" height="300" width="auto" alt="dino">
+                <p>Hier stehen Infos zum Bild</p>
+                
+            </div>
+
+            <div class="flex-item">
+                <span> My Work 2</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente minima laboriosam perferendis 
+                    quaerat unde nobis consequatur officia eius eaque eos enim dignissimos nostrum similique praesentium, dolore tempora doloribus voluptatum.</p>
+                
+            </div>
+
+            
+
+    </div>
+           
+
+
+    </div>
+
+
+ <div class="botton">
+            <h4>Copyright</h4>
+    </div>
+</div>
+
 </body>
 </html>
