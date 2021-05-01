@@ -4,49 +4,74 @@ body {
   background-color: #17202a;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 header {
   display: flex;
   flex-direction: column;
 }
 header > p {
-  font-size: 1.5vw;
+  font-size: 2.5vw;
   font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
   font-size: 5vw;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-
 }
-main > div > p {
-  border: 1px white solid;
+h3 {
+  font-weight: bold;
+}
+
+main {
+  display: inline-block;
   font-size: 2vw;
+}
+main > div:nth-child(2n){
+  background-color: #0a295a;
+}
+li{
+  list-style: initial;
+  font-size: 12px;
+  padding: 2px;
+}
+.maincontent,
+.about,
+.works,
+.graphics,
+.coding {
+  background-color: #3b5998;
+  /* font-weight: bold; */
+  padding: 15px;
+  margin: 10px;
+  width: 120px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 p {
   display: block;
-  flex-direction: column;
-  font-size: 1.2vw;
 }
-footer{
+footer {
   font-size: smaller;
   background-color: slategray;
+  /* ---------------------dropdown Menü----------------------------------------- */
 }
 .dropbtn {
   background-image: url(/navbar.png);
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 10px;
   width: 40px;
+  padding: vw;
   height: 40px;
   border: none;
   cursor: pointer;
-}
 
+}
 .dropdown {
   position: relative;
   display: inline-block;
   background-image: url(/navbar.png);
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -54,25 +79,24 @@ footer{
   min-width: auto;
   z-index: 1;
 }
-
 .dropdown-content a {
   color: black;
   text-decoration: none;
   display: block;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-@media only screen and (max-width: 600px) {
+
+
+@media only screen and (min-width: 600px) {
   body {
     background-color: rgb(44, 79, 90);
   }
+  main{
+    display: flex;
+  }
 }
-
-
-
-
 /* ------------------SOCIAL MEDIA---------------------------- */
 .fa {
   padding: 20px;
@@ -84,16 +108,16 @@ footer{
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
 .fa-twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 
