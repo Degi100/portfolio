@@ -40,21 +40,33 @@ li{
 .graphics,
 .coding {
   background-color: #3b5998;
-  /* font-weight: bold; */
   padding: 15px;
   margin: 10px;
-  width: 120px;
+  width: max-content;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  box-shadow: 2px 2px 4px 1px black;
 }
 p {
   display: block;
 }
-footer {
+footer a:hover{
+  color: white;
+
+}
+footer li, a{
+ list-style: none;
+ text-decoration: none;
+ align-items: center;
+}
+footer ul{
+  display: flex;
+  flex-direction: row;
   font-size: smaller;
   background-color: slategray;
-  /* ---------------------dropdown Menü----------------------------------------- */
+  list-style: none;
 }
+  /* ---------------------dropdown Menü----------------------------------------- */
 .dropbtn {
   background-image: url(/navbar.png);
   background-repeat: no-repeat;
