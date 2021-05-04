@@ -4,71 +4,58 @@ body {
   background-color: #17202a;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  
 }
 header {
   display: flex;
   flex-direction: column;
 }
 header > p {
-  font-size: 2.5vw;
+  font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-  font-size: 5vw;
+  font-size: 22px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-h3 {
+
+main > div:nth-child(2n) {
+  background-color: #0c5a7e;
+}
+main h3 {
   font-weight: bold;
 }
-
-main {
-  display: inline-block;
-  font-size: 2vw;
-}
-main > div:nth-child(2n){
-  background-color: #0a295a;
-}
-li{
+li {
   list-style: initial;
   font-size: 12px;
   padding: 2px;
 }
-.maincontent,
-.about,
-.works,
-.graphics,
-.coding {
-  background-color: #3b5998;
-  padding: 15px;
-  margin: 10px;
-  width: max-content;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  box-shadow: 2px 2px 4px 1px black;
-}
-p {
-  display: block;
-}
-footer a:hover{
-  color: white;
 
+.main_layer {
+  display: flex;
 }
-footer li, a{
- list-style: none;
- text-decoration: none;
- align-items: center;
+
+.main_layer > .bg1 {
+  background-image: url();
 }
-footer ul{
+
+footer a:hover {
+  color: white;
+}
+footer li,
+a {
+  list-style: none;
+  text-decoration: none;
+  align-items: center;
+}
+footer ul {
   display: flex;
   flex-direction: row;
   font-size: smaller;
   background-color: slategray;
   list-style: none;
 }
-  /* ---------------------dropdown Menü----------------------------------------- */
+/* ---------------------dropdown Menü----------------------------------------- */
 .dropbtn {
-  background-image: url(/navbar.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px;
@@ -77,12 +64,12 @@ footer ul{
   height: 40px;
   border: none;
   cursor: pointer;
-
 }
 .dropdown {
+  display: flex;
+  align-items: center;
   position: relative;
   display: inline-block;
-  background-image: url(/navbar.png);
 }
 .dropdown-content {
   display: none;
@@ -100,13 +87,80 @@ footer ul{
   display: block;
 }
 
+/* ---------------------Burger Button------------------------------------ */
 
-@media only screen and (min-width: 600px) {
+.burgernav {
+  background-color: rgb(173, 2, 2);
+  height: 40px;
+  width: 40px;
+}
+@media only screen and (min-width: 499px) {
   body {
-    background-color: rgb(44, 79, 90);
-  }
-  main{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    background: rgb(9, 9, 121);
+    background: radial-gradient(
+      circle,
+      rgba(9, 9, 121, 0.9528011888349089) -43%,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header > h1 {
+    display: flex;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 5px 5px 30px black;
+  }
+  header > p {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navi {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 30px;
+  }
+
+  .navi > p:hover {
+    color: rgb(7, 22, 112);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .main_content {
+    display: flex;
+    background-color: rgba(4, 4, 102, 0.918);
+    border: 1px white solid;
+    height: 300px;
+    width: 600px;
+    opacity: 0.5;
+  }
+
+  .main_content:hover {
+    border-left: 1px black solid;
+  }
+  .main_content:hover {
+    border-right: 1px black solid;
+  }
+  .sub_content {
+    position: absolute;
+
+
+    
+  }
+  .dropbtn {
+    display: none;
   }
 }
 /* ------------------SOCIAL MEDIA---------------------------- */
@@ -228,3 +282,5 @@ footer ul{
   background: #ff6600;
   color: white;
 }
+
+/* -------------------------------hover-------------------------------------*/
