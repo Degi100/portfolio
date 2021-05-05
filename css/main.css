@@ -184,7 +184,7 @@ footer ul {
     color: white;
     background-color: rgba(4, 4, 102, 0.918);
     border: 1px white solid;
-    width: 120vw;
+    max-width:100%;
     height: max-content;
     opacity: 0.5;
   }
