@@ -116,6 +116,7 @@ footer ul {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-size: 100px;
     text-align: center;
+    color: white;
     text-shadow: 5px 5px 30px black;
   }
   header > p {
@@ -140,6 +141,7 @@ footer ul {
 
   .main_content {
     display: flex;
+    color: white;
     background-color: rgba(4, 4, 102, 0.918);
     border: 1px white solid;
     height: 300px;
@@ -156,8 +158,6 @@ footer ul {
   .sub_content {
     position: absolute;
 
-
-    
   }
   .dropbtn {
     display: none;
