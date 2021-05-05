@@ -119,6 +119,9 @@ footer ul {
     color: white;
     text-shadow: 5px 5px 30px black;
   }
+  header > h1:nth-child(){
+    color: tomato;
+  }
   header > p {
     color: #000;
     display: flex;
@@ -133,7 +136,7 @@ footer ul {
   }
 
   .navi > p:hover {
-    color: rgb(7, 22, 112);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     cursor: pointer;
