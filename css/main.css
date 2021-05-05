@@ -18,6 +18,10 @@ h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+h1 > p{
+  color: rgb(16, 62, 148);
+}
+
 main > div:nth-child(2n) {
   background-color: #0c5a7e;
 }
