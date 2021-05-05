@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        .sub_layer,
+        .sub_layer2,
+        .sub_layer3 {
+            background-color: black;
+            width: 0px;
+            height: 3px;
+            margin: 1px;
+            border-radius: 5px;
+        }
+
+        .main_layer:hover {
+            background-color: rgb(255, 253, 253);
+        }
+
+        button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100vw;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <button class="main_layer">
+        <div class="sub_layer"></div>
+        <div class="sub_layer2"></div>
+        <div class="sub_layer3"></div>
+    </button>
+</body>
+
+</html>
