@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 /* ------------------CELLPHONE---------------------------------- */
 
 body {
   background-color: #17202a;
   color: white;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
 }
 header {
@@ -13,9 +13,9 @@ header {
   flex-direction: column;
 }
 
-h1 b:nth-child(1) { 
-  color: rgb(19, 49, 179); }
-
+h1 b:nth-child(1) {
+  color: rgb(19, 49, 179);
+}
 
 header > p {
   font-size: 22px;
@@ -26,7 +26,7 @@ h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-h1 > p{
+h1 > p {
   color: rgb(16, 62, 148);
 }
 
@@ -68,26 +68,23 @@ footer ul {
 .btn_layer,
 .btn_layer2,
 .btn_layer3 {
-    background-color: rgb(255, 255, 255);
-    width: 60px;
-    height: 10px;
-    margin: 6px;
-    border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  width: 60px;
+  height: 10px;
+  margin: 6px;
+  border-radius: 5px;
 }
 
 .btn_layer:hover {
-    background-color: rgb(13, 16, 187);
+  background-color: rgb(13, 16, 187);
 }
 
 .btn_button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 /* ---------------------dropdown Menü----------------------------------------- */
 .dropbtn {
@@ -122,8 +119,6 @@ footer ul {
   display: block;
 }
 
-
-
 @media only screen and (min-width: 499px) {
   body {
     display: flex;
@@ -142,18 +137,18 @@ footer ul {
     background-size: cover;
     font-family: arial;
   }
-  .btn_layer{
-    display:none;
+  .btn_layer {
+    display: none;
   }
   header > h1 {
     display: flex;
-    font-family: 'Russo One';
+    font-family: "Russo One";
     font-size: 100px;
     text-align: center;
     color: white;
     text-shadow: 5px 5px 30px black;
   }
-  header > h1:nth-child(){
+  header > h1:nth-child() {
     color: tomato;
   }
   header > p {
@@ -161,66 +156,73 @@ footer ul {
     display: flex;
     flex-direction: row;
   }
-  
+
   /* -------------------------------------Navi------------------------------------------- */
   .navi {
     display: flex;
     justify-content: space-between;
     margin: 10px;
-    font-family: 'Russo One';
+    font-family: "Russo One";
     font-size: 30px;
   }
 
-  .navi:hover b:nth-child(1) { 
-  color: rgb(19, 49, 179); 
-
-}
+  .navi:hover b:nth-child(1) {
+    color: rgb(19, 49, 179);
+  }
 
   .navi > p:hover {
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     cursor: pointer;
   }
-/* -----------------------------------Main Content--------------------------------------------------------- */
+  /* -----------------------------------Main Content--------------------------------------------------------- */
   .main_content {
     display: flex;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     color: white;
     background-color: rgba(4, 4, 102, 0.918);
     border: 1px white solid;
-    height: 600px;
-    width: 800px;
+    width: 120vw;
+    height: max-content;
     opacity: 0.5;
   }
 
   .sub_content {
     position: absolute;
-
   }
-.typewriter h1 {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
+  .typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
-}
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
 
   .dropbtn {
     display: none;
