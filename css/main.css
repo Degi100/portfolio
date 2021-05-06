@@ -184,11 +184,32 @@ footer ul {
     color: white;
     background-color: rgba(4, 4, 102, 0.918);
     border: 1px white solid;
-    max-width:100%;
+    max-width: 100%;
     height: max-content;
     opacity: 0.5;
   }
 
+  .about_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    color: white;
+    background-color: rgba(4, 4, 102, 0.918);
+    border: 1px white solid;
+    max-width: 100%;
+    height: max-content;
+    opacity: 0.5;
+  }
+  .itsme {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../itsme.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+  }
   .sub_content {
     position: absolute;
   }
