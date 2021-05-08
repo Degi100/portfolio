@@ -183,6 +183,7 @@ footer ul {
     padding: 20px;
     color: white;
     background-color: rgba(4, 4, 102, 0.918);
+    background-repeat: no;
     border: 1px white solid;
     max-width: 100%;
     height: max-content;
@@ -208,6 +209,8 @@ footer ul {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    height: 900px;
+    max-width: 100%;
     margin: 0;
   }
   .sub_content {

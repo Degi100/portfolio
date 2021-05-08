@@ -1,0 +1,94 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header header header ."
+        "right nav nav nav left left"
+        "right main main main left left"
+        "right main main main left left"
+        "footer footer footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+.nav {
+    grid-area: nav;
+}
+.right {
+    grid-area: right;
+}
+.left {
+    grid-area: left;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}
+body {
+    background: radial-gradient(
+        circle,
+        rgba(9, 9, 121, 0.9528011888349089) -43%,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-container > .header > h1 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Russo One";
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 30px black;
+}
+
+.grid-container h1 > b:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+
+    color: tomato;
+}
+
+.navi {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Russo One";
+    margin-bottom: 100px;
+    font-size: 30px;
+    border: 1px black solid;
+}
+
+.navi:hover b:nth-child(1) {
+    color: rgb(19, 49, 179);
+}
+
+.navi > a {
+    color: white;
+    text-decoration: none;
+    border: 1px black solid;
+}
+.navi > p:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.main {
+
+    background-image: url(/itsme.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* opacity: 0.5; */
+}
+
+.footer {
+    border: 1px black solid;
+}
