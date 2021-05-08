@@ -1,102 +1,105 @@
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "header header header header header ."
-        "right nav nav nav left left"
-        "right main main main left left"
-        "right main main main left left"
-        "footer footer footer footer footer footer";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 10fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "right header header header header ."
+    "right nav nav nav left left"
+    "right main main main left left"
+    "right main main main left left"
+    "right footer footer footer footer footer";
 }
 
 .header {
-    grid-area: header;
+  grid-area: header;
 }
 .nav {
-    grid-area: nav;
+  grid-area: nav;
 }
 .right {
-    grid-area: right;
+  grid-area: right;
 }
 .left {
-    grid-area: left;
+  grid-area: left;
+  position: fixed;
 }
 .main {
-    grid-area: main;
+  grid-area: main;
+  position: relative;
 }
 .footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 body {
-    background: radial-gradient(
-        circle,
-        rgba(9, 9, 121, 0.9528011888349089) -43%,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(0, 212, 255, 1) 100%
-    );
-    background-repeat: no-repeat;
+  background: radial-gradient(
+    circle,
+    rgba(9, 9, 121, 0.9528011888349089) -43%,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
 }
 
-
 .grid-container > .header > h1 {
-    display: flex;
-    flex-direction: column;
-    font-family: "Russo One";
-    font-size: 100px;
-    text-align: center;
-    color: white;
-    text-shadow: 5px 5px 30px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Russo One";
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  text-shadow: 5px 5px 30px black;
 }
 
 .grid-container h1 > b:nth-child(1) {
-    display: flex;
-    flex-direction: row;
-    color: tomato;
+  display: flex;
+  flex-direction: row;
+  color: tomato;
 }
 
 .navi {
-    display: flex;
-    text-align: center;
-    justify-content:space-around;
-    font-family: "Russo One";
-    font-size: 30px;
-    border: 1px black solid;
+  display: flex;
+justify-content:right;
+  font-family: "Russo One";
+  font-size: 30px;
+  border: 1px black solid;
+  
 }
 
-.grid-container > .nav > .navi{
-    margin-top: 30px;
+.grid-container > .nav > .navi {
+  margin-top: 30px;
 }
 
 .navi:hover b:nth-child(1) {
-    color: rgb(19, 49, 179);
+  color: rgb(19, 49, 179);
 }
 
-.navi > a {
-    color: white;
-    text-decoration: none;
-    border: 1px black solid;
+.nav .navi > a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  border: 1px black solid;
+  padding-left: 6git 0px;
 }
 .navi > p:hover {
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    cursor: pointer;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  cursor: pointer;
 }
 
-
-.img_about{
-
-    background-image: url(/itsme.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 20%;
-    height: 900px;
-    /* opacity: 0.5;  */
-     margin-top: 0;
-     position: fixed;
+.img_about {
+  background-image: url(/itsme.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 340px;
+  margin-top: 0;
+  margin: left;
+  height: 1024px;
+  position: fixed;
+  max-width: 40%;
 }
 
 .footer {
-    border: 1px black solid;
+  border: 1px black solid;
 }
