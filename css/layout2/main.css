@@ -36,9 +36,9 @@ body {
         rgba(2, 0, 36, 1) 0%,
         rgba(0, 212, 255, 1) 100%
     );
-    background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 .grid-container > .header > h1 {
     display: flex;
@@ -53,7 +53,6 @@ body {
 .grid-container h1 > b:nth-child(1) {
     display: flex;
     flex-direction: row;
-
     color: tomato;
 }
 
@@ -86,7 +85,7 @@ body {
 }
 
 
-.main > .img_about{
+.img_about{
 
     background-image: url(/itsme.png);
     background-repeat: no-repeat;
@@ -94,7 +93,7 @@ body {
     width: 20%;
     height: 900px;
     /* opacity: 0.5;  */
-     margin-top: -500px;
+     margin-top: 0;
      position: fixed;
 }
 
