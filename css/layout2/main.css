@@ -13,20 +13,21 @@
 
 .header {
   grid-area: header;
+  position: fixed;
 }
 .nav {
-  grid-area: nav;
+  grid-area: nav; 
+  margin-left: 200px;
 }
 .right {
   grid-area: right;
 }
 .left {
   grid-area: left;
-  position: fixed;
+
 }
 .main {
   grid-area: main;
-  position: relative;
 }
 .footer {
   grid-area: footer;
@@ -39,6 +40,7 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .grid-container > .header > h1 {
@@ -60,16 +62,11 @@ body {
 
 .navi {
   display: flex;
-justify-content:right;
   font-family: "Russo One";
   font-size: 30px;
-  border: 1px black solid;
-  
+  position: relative;
 }
 
-.grid-container > .nav > .navi {
-  margin-top: 30px;
-}
 
 .navi:hover b:nth-child(1) {
   color: rgb(19, 49, 179);
@@ -79,27 +76,33 @@ justify-content:right;
   display: flex;
   color: white;
   text-decoration: none;
-  border: 1px black solid;
-  padding-left: 6git 0px;
+  padding-left: 60px;
 }
+
+.navi > p{
+    text-align: right;
+}
+
 .navi > p:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(13, 93, 184);
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
   cursor: pointer;
 }
+
 
 .img_about {
   background-image: url(/itsme.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 340px;
-  margin-top: 0;
-  margin: left;
+  width: 30vw;
   height: 1024px;
   position: fixed;
   max-width: 40%;
 }
 
-.footer {
-  border: 1px black solid;
+.footer > p{
+    color: rgb(11, 62, 156);
+ background-color:rgb(20, 20, 83);
+ opacity: 0.5;
+ height: 100vw;
 }
