@@ -21,6 +21,7 @@
 }
 .right {
   grid-area: right;
+  text-align: r;
 }
 .left {
   grid-area: left;
@@ -98,6 +99,19 @@ body {
   height: 1024px;
   position: fixed;
   max-width: 40%;
+}
+
+.img_about > h1{
+    display: flex;
+    justify-content: right;
+    margin-top: 6%;
+    color: red;
+    background-color: rgb(30, 30, 66);
+    font-size: 30px;
+    padding-right: 70px;
+    max-width: right;
+    height: 300px;
+    opacity: 0.5;
 }
 
 .footer > p{
