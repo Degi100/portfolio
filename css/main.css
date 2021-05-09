@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -15,8 +15,7 @@
 }
 .nav {
   grid-area: nav;
-  position:relative;
-
+  position: relative;
 }
 .main {
   grid-area: main;
@@ -55,7 +54,6 @@ h1 {
   text-shadow: 5px 5px 4px rgb(39, 128, 211);
   position: fixed;
   z-index: 2;
-
 }
 
 /* ---------------------dropdown Menü----------------------------------------- */
@@ -109,6 +107,10 @@ h1 {
   min-width: auto;
   z-index: 1;
 }
+.dropdown-content{
+  list-style: none;
+}
+
 .dropdown-content > a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
@@ -123,34 +125,26 @@ h1 {
   color: rgb(45, 124, 170);
 }
 
-.main {
-display: flex;
+#main {
+  display: flex;
   flex-direction: column;
-  margin-top: 140px;
-  border: 1px black solid; 
+  border: 1px black solid;
+  margin-top: 130px;
   font-family: arial;
   position: relative;
-position: 2;
+  z-index:-1;
 }
-
-.main > .startpage h2 {
-  font-weight: bold;
-}
-
-.main > .startpage {
+#startpage {
   border: 1px rgb(255, 9, 9) solid;
-  color: white;
+  color: white;    
 }
-.main > .about {
-  border: 1px rgb(244, 244, 248) solid;
+#about {
+  border: 1px rgb(244, 244, 248) solid;     
 }
-.main > .projects {
-  border: 1px rgb(154, 223, 25) solid;
-}
-.main > .links {
-  border: 1px rgb(211, 0, 165) solid;
-}
+#projects {
+  border: 1px rgb(154, 223, 25) solid;    
 
-
-
- 
+}
+#links {
+  border: 1px rgb(211, 0, 165) solid; 
+}
