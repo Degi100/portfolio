@@ -141,6 +141,7 @@ h2 {
   font-weight: bold;
   background-color: rgb(53, 71, 121);
   padding: 10px;
+  width: 100%;
   text-shadow: 2px 1px 8px rgba(255, 255, 255, 0.226);
 }
 
@@ -154,7 +155,7 @@ h2 {
 }
 
 
-#about, #projects, #links{
+#startpage, #about, #projects, #links{
   display: flex;
   flex-direction:column;
   align-items: center;
@@ -170,6 +171,7 @@ h2 {
 }
 
 #projects > img{
+
   height: 300px;
   width: 400px;
 }
