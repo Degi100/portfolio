@@ -15,7 +15,6 @@
 }
 .nav {
   grid-area: nav;
-  position: relative;
 }
 .main {
   grid-area: main;
@@ -41,7 +40,7 @@ body {
   margin-top: -120px;
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   z-index: 1;
 }
 
@@ -52,7 +51,7 @@ h1 {
   color: white;
   font-size: 50px;
   text-shadow: 5px 5px 4px rgb(39, 128, 211);
-  position: fixed;
+  position:fixed;
   z-index: 2;
 }
 
@@ -98,20 +97,20 @@ h1 {
   align-items: center;
   position: relative;
   display: inline-block;
-  border: 1px black solid;
 }
 .dropdown-content {
   display: none;
+  font-size: 30px;
   position: absolute;
   background-color: #f9f9f9;
   min-width: auto;
   z-index: 1;
 }
-.dropdown-content{
+.dropdown-content {
   list-style: none;
 }
 
-.dropdown-content > a {
+.dropdown-content li > a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   padding: 5px;
@@ -121,7 +120,7 @@ h1 {
 .nav:hover .dropdown-content {
   display: block;
 }
-.dropdown-content > a:hover {
+.dropdown-content > li > a:hover {
   color: rgb(45, 124, 170);
 }
 
@@ -132,19 +131,16 @@ h1 {
   margin-top: 130px;
   font-family: arial;
   position: relative;
-  z-index:-1;
-}
-#startpage {
-  border: 1px rgb(255, 9, 9) solid;
-  color: white;    
-}
-#about {
-  border: 1px rgb(244, 244, 248) solid;     
-}
-#projects {
-  border: 1px rgb(154, 223, 25) solid;    
+  z-index: -1;
+  padding: 10px;
 
 }
-#links {
-  border: 1px rgb(211, 0, 165) solid; 
+
+
+h2 {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(53, 71, 121);
+  padding: 10px;
+  text-shadow: 2px 1px 8px rgb(255, 255, 255);
 }
