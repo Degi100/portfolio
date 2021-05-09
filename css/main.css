@@ -142,7 +142,8 @@ h2 {
   background-color: rgb(53, 71, 121);
   padding: 10px;
   width: 100%;
-  text-shadow: 2px 1px 8px rgba(255, 255, 255, 0.226);
+  text-shadow: 2px 1px 8px rgb(53, 7, 7);
+  box-shadow: 2px 2px 9px thistle;
 }
 
 #startpage > p,
@@ -150,7 +151,7 @@ h2 {
 #projects > p,
 #links > p {
   color: rgb(255, 255, 255);
-  padding: 10px;
+  padding: 5px;
   background-color: rgba(103, 151, 212, 0.322);
 }
 
@@ -176,7 +177,9 @@ h2 {
   width: 400px;
 }
 
-
+.content > p {
+  padding: 10px;
+}
 
 @media screen and (min-width: 1023px) and (max-width: 1199px) {
   h1 {
