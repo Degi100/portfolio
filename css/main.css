@@ -1,99 +1,96 @@
-@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+}
+.header {
+  grid-area: header;
+}
+.nav {
+  grid-area: nav;
+  position:relative;
 
-/* ------------------CELLPHONE---------------------------------- */
-
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+}
 body {
-  background-color: #17202a;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 20px;
+  background: radial-gradient(
+    circle,
+    rgba(9, 9, 121, 0.9528011888349089) -43%,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-header {
+.header > .img_about {
   display: flex;
-  flex-direction: column;
+  background-image: url(/itsme.png);
+  width: 100%;
+  height: 250px;
+  margin-top: -120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 1;
 }
 
-h1 b:nth-child(1) {
-  color: rgb(19, 49, 179);
-}
-
-header > p {
-  font-size: 22px;
-  font-family: Arial, Helvetica, sans-serif;
-}
 h1 {
-  font-size: 22px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-
-h1 > p {
-  color: rgb(16, 62, 148);
-}
-
-main > div:nth-child(2n) {
-  background-color: #0c5a7e;
-}
-main h3 {
-  font-weight: bold;
-}
-li {
-  list-style: initial;
-  font-size: 12px;
-  padding: 2px;
-}
-
-.main_layer {
-  display: flex;
-}
-
-footer a:hover {
-  color: rgb(8, 5, 145);
-}
-footer li,
-a {
+  margin-top: 10px;
+  margin-left: 50px;
+  font-family: "Russo One";
   color: white;
-  list-style: none;
-  text-decoration: none;
-  align-items: center;
+  font-size: 50px;
+  text-shadow: 5px 5px 4px rgb(39, 128, 211);
+  position: fixed;
+  z-index: 2;
+
 }
-footer ul {
+
+/* ---------------------dropdown Menü----------------------------------------- */
+.nav_res {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
+  margin-left: 200px;
+  margin-top: 120px;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
 }
-/* ---------------------Burger Button------------------------------------ */
 
 .btn_layer,
 .btn_layer2,
 .btn_layer3 {
   background-color: rgb(255, 255, 255);
   width: 60px;
-  height: 10px;
+  height: 8px;
   margin: 6px;
   border-radius: 5px;
-}
-
-.btn_layer:hover {
-  background-color: rgb(13, 16, 187);
+  box-shadow: 5px 5px 4px rgb(39, 128, 211);
 }
 
 .btn_button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: -65px;
   align-items: center;
 }
 
-/* ---------------------dropdown Menü----------------------------------------- */
 .dropbtn {
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 10px;
-  width: 40px;
-  padding: 10vw;
-  height: 40px;
+  max-height: fit-content;
+  width: 60px;
   border: none;
   cursor: pointer;
 }
@@ -102,6 +99,7 @@ footer ul {
   align-items: center;
   position: relative;
   display: inline-block;
+  border: 1px black solid;
 }
 .dropdown-content {
   display: none;
@@ -110,266 +108,48 @@ footer ul {
   min-width: auto;
   z-index: 1;
 }
-.dropdown-content a {
-  color: black;
+.dropdown-content > a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  padding: 5px;
   text-decoration: none;
   display: block;
 }
-.dropdown:hover .dropdown-content {
+.nav:hover .dropdown-content {
   display: block;
 }
-
-@media only screen and (min-width: 499px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    background: rgb(9, 9, 121);
-    background: radial-gradient(
-      circle,
-      rgba(9, 9, 121, 0.9528011888349089) -43%,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(0, 212, 255, 1) 100%
-    );
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: arial;
-  }
-  .btn_layer {
-    display: none;
-  }
-  header > h1 {
-    display: flex;
-    font-family: "Russo One";
-    font-size: 100px;
-    text-align: center;
-    color: white;
-    text-shadow: 5px 5px 30px black;
-  }
-  header > h1:nth-child() {
-    color: tomato;
-  }
-  header > p {
-    color: #000;
-    display: flex;
-    flex-direction: row;
-  }
-
-  /* -------------------------------------Navi------------------------------------------- */
-  .navi {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    font-family: "Russo One";
-    font-size: 30px;
-  }
-
-  .navi:hover b:nth-child(1) {
-    color: rgb(19, 49, 179);
-  }
-
-  .navi > p:hover {
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    cursor: pointer;
-  }
-  /* -----------------------------------Main Content--------------------------------------------------------- */
-  .main_content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    color: white;
-    background-color: rgba(4, 4, 102, 0.918);
-    background-repeat: no;
-    border: 1px white solid;
-    max-width: 100%;
-    height: max-content;
-    opacity: 0.5;
-  }
-
-  .about_content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px;
-    color: white;
-    background-color: rgba(4, 4, 102, 0.918);
-    border: 1px white solid;
-    max-width: 100%;
-    height: max-content;
-    opacity: 0.5;
-  }
-  .itsme {
-    display: flex;
-    flex-direction: column;
-    background-image: url(../itsme.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 900px;
-    max-width: 100%;
-    margin: 0;
-  }
-  .sub_content {
-    position: absolute;
-  }
-  .typewriter h1 {
-    color: #fff;
-    font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.15em; /* Adjust as needed */
-    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
-  }
-
-  /* The typing effect */
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: orange;
-    }
-  }
-
-  .dropbtn {
-    display: none;
-  }
-}
-/* ------------------SOCIAL MEDIA---------------------------- */
-.fa {
-  padding: 20px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 10px 5px;
-  border-radius: 50%;
+.dropdown-content > a:hover {
+  color: rgb(45, 124, 170);
 }
 
-.fa:hover {
-  opacity: 0.7;
+.main {
+display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+  border: 1px black solid; 
+  font-family: arial;
+  position: relative;
+position: 2;
 }
 
-.fa-facebook {
-  background: #3b5998;
+.main > .startpage h2 {
+  font-weight: bold;
+}
+
+.main > .startpage {
+  border: 1px rgb(255, 9, 9) solid;
   color: white;
 }
-
-.fa-twitter {
-  background: #55acee;
-  color: white;
+.main > .about {
+  border: 1px rgb(244, 244, 248) solid;
+}
+.main > .projects {
+  border: 1px rgb(154, 223, 25) solid;
+}
+.main > .links {
+  border: 1px rgb(211, 0, 165) solid;
 }
 
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
 
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-pinterest {
-  background: #cb2027;
-  color: white;
-}
-
-.fa-snapchat-ghost {
-  background: #fffc00;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.fa-skype {
-  background: #00aff0;
-  color: white;
-}
-
-.fa-android {
-  background: #a4c639;
-  color: white;
-}
-
-.fa-dribbble {
-  background: #ea4c89;
-  color: white;
-}
-
-.fa-vimeo {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-tumblr {
-  background: #2c4762;
-  color: white;
-}
-
-.fa-vine {
-  background: #00b489;
-  color: white;
-}
-
-.fa-foursquare {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-stumbleupon {
-  background: #eb4924;
-  color: white;
-}
-
-.fa-flickr {
-  background: #f40083;
-  color: white;
-}
-
-.fa-yahoo {
-  background: #430297;
-  color: white;
-}
-
-.fa-soundcloud {
-  background: #ff5500;
-  color: white;
-}
-
-.fa-reddit {
-  background: #ff5700;
-  color: white;
-}
-
-.fa-rss {
-  background: #ff6600;
-  color: white;
-}
-
-/* -------------------------------hover-------------------------------------*/
+ 
