@@ -31,6 +31,7 @@ body {
   );
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 .header > .img_about {
   display: flex;
@@ -134,13 +135,23 @@ h1 {
   z-index: -1;
   padding: 10px;
 
-}
+  background-color: rgba(66, 151, 190, 0.295);
 
+}
 
 h2 {
   color: white;
   font-weight: bold;
   background-color: rgb(53, 71, 121);
   padding: 10px;
-  text-shadow: 2px 1px 8px rgb(255, 255, 255);
+  text-shadow: 2px 1px 8px rgba(255, 255, 255, 0.226);
+}
+
+
+#startpage > p, #about > p, #projects > p, #links > p{
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  background-color: rgba(103, 151, 212, 0.322);
+
+ 
 }
