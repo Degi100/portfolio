@@ -1,5 +1,4 @@
-@import url('https://fonts.google.com/specimen/Russo+One?selection.family=Russo+One');
-
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
