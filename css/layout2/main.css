@@ -1,34 +1,20 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 10fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "right header header header header ."
-    "right nav nav nav left left"
-    "right main main main left left"
-    "right main main main left left"
-    "right footer footer footer footer footer";
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
 }
-
 .header {
   grid-area: header;
-  position: fixed;
 }
 .nav {
-  grid-area: nav; 
-  display: flex;
-  justify-content: right;
-  margin-left: 200px;
-  margin-bottom: 100px;
-}
-.right {
-  grid-area: right;
-  position: absolute;
-}
-.left {
-    display: inline-flex;
-
+  grid-area: nav;
+  position:relative;
 
 }
 .main {
@@ -48,81 +34,123 @@ body {
   background-size: cover;
 }
 
-.headline > h1 {
+.header > .img_about {
+  display: flex;
+  background-image: url(/itsme.png);
+  width: 100%;
+  height: 250px;
+  margin-top: -120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 1;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-left: 50px;
+  font-family: "Russo One";
+  color: white;
+  font-size: 50px;
+  text-shadow: 5px 5px 4px rgb(39, 128, 211);
+  position: fixed;
+  z-index: 2;
+
+}
+
+/* ---------------------dropdown Menü----------------------------------------- */
+.nav_res {
+  display: flex;
+  margin-left: 200px;
+  margin-top: 120px;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+}
+
+.btn_layer,
+.btn_layer2,
+.btn_layer3 {
+  background-color: rgb(255, 255, 255);
+  width: 60px;
+  height: 8px;
+  margin: 6px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 4px rgb(39, 128, 211);
+}
+
+.btn_button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Russo One";
-  font-size: 100px;
-  text-align: center;
-  color: white;
-  text-shadow: 5px 5px 30px black;
-  padding: 10px;M
+  margin-top: -65px;
+  align-items: center;
 }
 
-.grid-container h1 > b:nth-child(1) {
-  display: flex;
-  flex-direction: row;
-  color: tomato;
-}
-
-.navi {
-  display: flex;
-  font-family: "Russo One";
-  font-size: 30px;
-  position: relative;
-}
-
-
-.navi:hover b:nth-child(1) {
-  color: rgb(19, 49, 179);
-}
-
-.nav .navi > a {
-  display: flex;
-  color: white;
-  text-decoration: none;
-  padding-left: 60px;
-}
-
-.navi > p{
-    text-align: right;
-}
-
-.navi > p:hover {
-  color: rgb(13, 93, 184);
-  text-shadow: 1px 1px 1px rgb(0, 0, 0);
-  cursor: pointer;
-}
-
-
-.img_about {
-  background-image: url(/itsme.png);
+.dropbtn {
   background-repeat: no-repeat;
   background-size: cover;
-  width: 30vw;
-  height: 1024px;
-  position: fixed;
-  max-width: 40%;
+  max-height: fit-content;
+  width: 60px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  display: flex;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+  border: 1px black solid;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: auto;
+  z-index: 1;
+}
+.dropdown-content > a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+}
+.nav:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content > a:hover {
+  color: rgb(45, 124, 170);
 }
 
-.img_about > h1{
-    display: flex;
-    justify-content: right;
-    margin-top: 6%;
-    color: rgb(255, 255, 255);
-    background-color: rgb(30, 30, 66);
-    font-size: 30px;
-    padding-right: 70px;
-    max-width: right;
-    height: 300px;
-    opacity: 0.5;
+.main {
+display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+  border: 1px black solid; 
+  font-family: arial;
+  position: relative;
+position: 2;
+}
+
+.main > .startpage h2 {
+  font-weight: bold;
+}
+
+.main > .startpage {
+  border: 1px rgb(255, 9, 9) solid;
+  color: white;
+}
+.main > .about {
+  border: 1px rgb(244, 244, 248) solid;
+}
+.main > .projects {
+  border: 1px rgb(154, 223, 25) solid;
+}
+.main > .links {
+  border: 1px rgb(211, 0, 165) solid;
 }
 
 
-.footer > p{
-    color: rgb(11, 62, 156);
- background-color:rgb(20, 20, 83);
- opacity: 0.5;
- height: 100vw;
-}
+
+ 
