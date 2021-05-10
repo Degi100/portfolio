@@ -64,6 +64,12 @@ h1 {
   position: fixed;
   z-index: 2;
 }
+@media screen and (min-width: 300px){
+  .nav_res{
+    margin-left: 420px;
+    margin-top: 80px;
+  }  
+}
 
 .btn_layer,
 .btn_layer2,
@@ -124,6 +130,7 @@ h1 {
   color: rgb(45, 124, 170);
 }
 
+
 #main {
   display: flex;
   flex-direction: column;
@@ -146,6 +153,7 @@ h2 {
   box-shadow: 2px 2px 9px thistle;
 }
 
+
 #startpage > p,
 #about > p,
 #projects > p,
@@ -160,7 +168,6 @@ h2 {
   display: flex;
   flex-direction:column;
   align-items: center;
-
   
 }
 
@@ -172,6 +179,10 @@ h2 {
   border: 10px rgba(110, 136, 192, 0.671) solid;
   border-radius: 20px;
 }
+#about > img:hover{
+
+  border: 10px rgba(252, 252, 252, 0.671) solid;
+}
 
 #projects > img{
 
@@ -179,11 +190,12 @@ h2 {
   width: 400px;
 }
 
+
 .content > p {
   padding: 10px;
 }
 
-.img:hover{
+img{
     border: 10px rgba(248, 248, 248, 0.671) solid;
 }
 
@@ -213,8 +225,11 @@ h2 {
     z-index: -1;
     padding: 10px;
     background-color: rgba(66, 151, 190, 0.295);
+  
   }
+
 }
+  
 
 @media screen and (min-width: 1200px) {
   .img_about {
