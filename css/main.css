@@ -58,13 +58,13 @@ h1 {
 /* ---------------------dropdown Menü----------------------------------------- */
 .nav_res {
   display: flex;
-  margin-left: 200px;
+  margin-left: 170px;
   margin-top: 120px;
   justify-content: center;
   position: fixed;
   z-index: 2;
 }
-@media screen and (min-width: 400px){
+@media screen and (min-width: 500px){
   .nav_res{
     margin-left: 420px;
     margin-top: 80px;
