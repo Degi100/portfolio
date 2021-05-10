@@ -64,7 +64,7 @@ h1 {
   position: fixed;
   z-index: 2;
 }
-@media screen and (min-width: 300px){
+@media screen and (min-width: 400px){
   .nav_res{
     margin-left: 420px;
     margin-top: 80px;
