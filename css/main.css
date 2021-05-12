@@ -32,6 +32,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .header > .img_about {
   display: flex;
   background-image: url(/itsme.png);
@@ -55,6 +56,17 @@ h1 {
   z-index: 2;
 }
 
+#main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 130px;
+  font-family: arial;
+  position: relative;
+  z-index: -1;
+  padding: 10px;
+  background-color: rgba(66, 151, 190, 0.295);
+}
+
 /* ---------------------dropdown Menü----------------------------------------- */
 .nav_res {
   display: flex;
@@ -64,15 +76,40 @@ h1 {
   position: fixed;
   z-index: 2;
 }
-@media screen and (min-width: 500px){
-  .nav_res{
-    margin-left: 420px;
-    margin-top: 80px;
-  }  
 
-  h1{
+.nav_desk {
+  display: none;
+}
+
+@media screen and (min-width: 480px){
+  .nav_res {
+    margin-left: 420px;
+    display: none;
+  }
+
+  h1 {
+    display: flex;
+    position: relative;
     font-size: 50px;
   }
+  
+.nav_desk {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    z-index: 200;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  .nav_desk > li {
+    list-style: none;
+  }
+  .nav_desk > li a {
+    color: white;
+    text-decoration: none;
+  }
+
 }
 
 .btn_layer,
@@ -102,12 +139,14 @@ h1 {
   border: none;
   cursor: pointer;
 }
+
 .dropdown {
   display: flex;
   align-items: center;
   position: relative;
   display: inline-block;
 }
+
 .dropdown-content {
   display: none;
   font-size: 30px;
@@ -116,6 +155,7 @@ h1 {
   min-width: auto;
   z-index: 1;
 }
+
 .dropdown-content {
   list-style: none;
 }
@@ -127,22 +167,22 @@ h1 {
   text-decoration: none;
   display: block;
 }
+
 .nav:hover .dropdown-content {
   display: block;
 }
+
 .dropdown-content > li > a:hover {
   color: rgb(45, 124, 170);
 }
 
-
 #main {
   display: flex;
   flex-direction: column;
-  border: 1px black solid;
-  margin-top: 130px;
   font-family: arial;
   position: relative;
   z-index: -1;
+
   padding: 10px;
   background-color: rgba(66, 151, 190, 0.295);
 }
@@ -155,95 +195,90 @@ h2 {
   width: 100%;
   text-shadow: 2px 1px 8px rgb(53, 7, 7);
   box-shadow: 2px 2px 9px thistle;
+    border: 1px rgb(123, 255, 0) solid;
 }
-
 
 #startpage > p,
 #about > p,
 #projects > p,
 #links > p {
-  
   padding: 5px;
   background-color: rgba(103, 151, 212, 0.322);
   font-size: 16px;
 }
 
-
-#startpage, #about, #projects, #links{
-  display: flex;
-  flex-direction:column;
-  align-items: center;
-  
-}
-
-#about > img, #projects > img, #links > img{
+#startpage,
+#about,
+#projects,
+#links {
   display: flex;
   flex-direction: column;
-  height: 300px;
-  width: 200px;
+  align-items: center;
+}
+
+#about > img,
+#projects > img,
+#links > img {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100px;
   border: 10px rgba(110, 136, 192, 0.671) solid;
   border-radius: 20px;
 }
-#about > img:hover{
-
+#about > img:hover {
   border: 10px rgba(252, 252, 252, 0.671) solid;
 }
 
-#projects > img{
-
+#projects > img {
   height: 300px;
   width: 400px;
 }
-
 
 .content > p {
   padding: 10px;
 }
 
-img{
-    border: 10px rgba(248, 248, 248, 0.671) solid;
+img {
+  border: 10px rgba(248, 248, 248, 0.671) solid;
 }
 
 @media screen and (min-width: 1023px) and (max-width: 1199px) {
   h1 {
     align-content: center;
-    font-size: 100px;
+    font-size: 60px;
   }
-  .nav_res {
-    margin-top: 100px;
-    margin-left: 580px;
-  }
-  .nav {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  #main {
-    display: flex;
-    flex-direction: column;
-    border: 1px black solid;
-    margin-top: 130px;
-    font-family: arial;
-    position: relative;
-    z-index: -1;
-    padding: 10px;
-    background-color: rgba(66, 151, 190, 0.295);
-  
-  }
-
 }
-  
 
-@media screen and (min-width: 1200px) {
+
+  /* .nav_desk {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: red;
+    position: relative;
+    z-index: 200;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  .nav_desk > li {
+    list-style: none;
+  }
+  .nav_desk > li a {
+    color: white;
+    text-decoration: none;
+  } */
+
+  
+}
+
+/* @media screen and (min-width: 1200px) {
   .img_about {
     position: fixed;
   }
 
   h1 {
     align-content: center;
-    font-size: 100px;
     position: absolute;
   }
 
@@ -252,4 +287,4 @@ img{
     margin-left: 760px;
     position: fixed;
   }
-}
+} */
