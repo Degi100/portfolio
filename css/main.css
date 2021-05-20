@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer";
-}
+
 .header {
   grid-area: header;
 }
@@ -64,11 +54,11 @@ h3 {
 #main {
   display: flex;
   flex-direction: column;
-  margin-top: 130px;
+  margin-top: 10px;
   font-family: arial;
   position: relative;
   z-index: -1;
-  padding: 10px;
+  padding: 130px;
   background-color: rgba(66, 151, 190, 0.295);
 }
 
@@ -88,8 +78,9 @@ h3 {
 
 @media screen and (min-width: 480px) {
   .nav_res {
-    margin-left: 420px;
-    display: none;
+    margin
+    margin-left: 920px;
+
   }
 .header > .img_about {
   height: 200px;
@@ -99,7 +90,7 @@ h3 {
     display: flex;
     position: relative;
     color:rgb(255, 255, 255);
-    font-size: 100px;
+    font-size: 70px;
     
   }
 
@@ -265,6 +256,8 @@ img {
 }
 
 @media screen and (min-width: 1023px) and (max-width: 1199px) {
+
+  
   h1 {
     align-content: center;
     font-size: 100px;
