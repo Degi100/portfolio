@@ -23,6 +23,11 @@ body {
   background-size: cover;
 }
 
+.grid-container{
+  margin-top: 0px;
+
+}
+
 .header > .img_about {
   display: flex;
   background-image: url(/itsme.png);
@@ -33,6 +38,7 @@ body {
   background-size: cover;
   position: absolute;
   z-index: 1;
+
 }
 
 h1 {
@@ -44,22 +50,22 @@ h1 {
   text-shadow: 5px 5px 4px rgb(39, 128, 211);
   position: fixed;
   z-index: 2;
- 
+
 }
 
 h3 {
   font-weight: bold;
 }
 
-#main {
+.main {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  padding: 0px;
+  margin-top: 0px;
   font-family: arial;
-  position: relative;
-  z-index: -1;
-  padding: 130px;
   background-color: rgba(66, 151, 190, 0.295);
+
+  
 }
 
 /* ---------------------dropdown Menü----------------------------------------- */
@@ -70,6 +76,8 @@ h3 {
   justify-content: center;
   position: fixed;
   z-index: 2;
+  cursor: pointer;
+
 }
 
 .nav_desk {
@@ -78,20 +86,18 @@ h3 {
 
 @media screen and (min-width: 480px) {
   .nav_res {
-    margin
     margin-left: 920px;
-
   }
-.header > .img_about {
-  height: 200px;
-}
+
+  .header > .img_about {
+    height: 200px;
+  }
 
   h1 {
     display: flex;
     position: relative;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-size: 70px;
-    
   }
 
   .nav_desk {
@@ -105,15 +111,17 @@ h3 {
     text-decoration: none;
     padding: 16px;
   }
+
   .nav_desk > li {
     list-style: none;
   }
+
   .nav_desk > li a {
     color: rgb(255, 255, 255);
     text-shadow: 5px 5px 5px rgb(20, 75, 126);
     text-decoration: none;
-  }  
-  
+  }
+
   .nav_desk > li a:hover {
     color: rgb(0, 162, 255);
     text-decoration: underline;
@@ -127,9 +135,14 @@ h3 {
   width: 60px;
   height: 8px;
   margin: 6px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 4px rgb(39, 128, 211);
+  box-shadow: 5px 5px 4px rgb(7, 0, 0);
 }
+
+.btn_button:hover{
+  border: rgb(80, 29, 29) 1px solid;
+  box-shadow: 5px 5px 4px rgb(7, 0, 0);
+}
+
 
 .btn_button {
   display: flex;
@@ -205,7 +218,7 @@ h3 {
 h2 {
   color: white;
   font-weight: bold;
-  background-color: rgb(53, 71, 121);
+  background-color: rgb(70, 18, 18);
   padding: 10px;
   width: 100%;
   text-shadow: 2px 1px 8px rgb(53, 7, 7);
@@ -256,8 +269,6 @@ img {
 }
 
 @media screen and (min-width: 1023px) and (max-width: 1199px) {
-
-  
   h1 {
     align-content: center;
     font-size: 100px;
