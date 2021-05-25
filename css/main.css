@@ -68,6 +68,15 @@ h3 {
   
 }
 
+img {
+  opacity: 50%;
+}
+
+img {
+  opacity:100%;
+  transition:opacity 2s
+}
+
 /* ---------------------dropdown Menü----------------------------------------- */
 .nav_res {
   display: flex;
@@ -86,7 +95,7 @@ h3 {
 
 @media screen and (min-width: 480px) {
   .nav_res {
-    margin-left: 920px;
+    margin-left: 190px;
   }
 
   .header > .img_about {
@@ -123,7 +132,7 @@ h3 {
   }
 
   .nav_desk > li a:hover {
-    color: rgb(0, 162, 255);
+    color: rgb(0, 0, 0);
     text-decoration: underline;
   }
 }
@@ -134,8 +143,9 @@ h3 {
   background-color: rgb(255, 255, 255);
   width: 60px;
   height: 8px;
-  margin: 6px;
+  margin: 5px;
   box-shadow: 5px 5px 4px rgb(7, 0, 0);
+  position: relative;
 }
 
 .btn_button:hover{
@@ -224,6 +234,7 @@ h2 {
   text-shadow: 2px 1px 8px rgb(53, 7, 7);
   box-shadow: 2px 2px 9px thistle;
   text-align: center;
+  border: rgb(69, 150, 216) 2px solid;
 }
 
 #startpage > p,
@@ -242,6 +253,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 150px;
 }
 
 #about > img,
