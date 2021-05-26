@@ -291,10 +291,16 @@ h2 {
   margin: 15px;
 }
 
+/* #startpage > a {
+  color: white;
+} */
+
+#startpage > a,
 #projects > a{
   color: white;
 }
 
+#startpage > a:hover,
 #projects > a:hover{
   color: rgb(158, 12, 12);
 }
