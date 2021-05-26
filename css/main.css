@@ -24,12 +24,11 @@ body {
   background-size: cover;
 }
 
-.grid-container{
+.grid-container {
   margin-top: 0px;
-
 }
 
-.header >.img_about {
+.header > .img_about {
   display: flex;
   background-image: url(/itsme.png);
   width: 100%;
@@ -38,8 +37,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  
-
 }
 
 h1 {
@@ -52,7 +49,6 @@ h1 {
   text-shadow: 5px 5px 4px rgb(39, 128, 211);
   position: fixed;
   z-index: 2;
-
 }
 
 h3 {
@@ -66,7 +62,6 @@ h3 {
   margin-top: -50px;
   font-family: arial;
   width: 100%;
-
 }
 
 /* ---------------------dropdown Menü----------------------------------------- */
@@ -78,28 +73,26 @@ h3 {
   position: fixed;
   z-index: 2;
   cursor: pointer;
-
 }
 
-.dropdown-content li > a::after{
-        font-family: FontAwesome;
-        content: "\f103";
-        font-size: 0.5 rem;
-        
+.dropdown-content li > a::after {
+  font-family: FontAwesome;
+  content: "\f103";
+  font-size: 0.5 rem;
 }
 
 @media screen and (min-width: 768px) {
-.main{
-  margin-top: -120px;
-}
-
-  .nav_res {
-    display:none;
+  .main {
+    margin-top: -120px;
   }
 
-  .header{
-    position:fixed;
-    width: 100%
+  .nav_res {
+    display: none;
+  }
+
+  .header {
+    position: fixed;
+    width: 100%;
   }
   .header > .img_about {
     height: 200px;
@@ -121,25 +114,27 @@ h3 {
     font-size: 40px;
     text-decoration: none;
     padding: 16px;
-
   }
 
   .nav_desk > li {
     list-style: none;
     margin-top: 100px;
-   }
+  }
 
   .nav_desk > li a {
     color: rgb(255, 255, 255);
     text-shadow: 5px 5px 5px rgb(20, 75, 126);
     text-decoration: none;
     position: fixed;
-
+    background-color: rgba(99, 180, 246, 0.746);
+    padding: 3px;
+    border-radius: 3px;
   }
 
   .nav_desk > li a:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(70, 18, 18);
     text-decoration: underline;
+    border: black 2px solid;
   }
 }
 
@@ -154,11 +149,10 @@ h3 {
   position: relative;
 }
 
-.btn_button:hover{
-  border: rgb(80, 29, 29) 1px solid;
+.btn_button:hover {
+  border: rgb(255, 255, 255) 1px solid;
   box-shadow: 5px 5px 4px rgb(7, 0, 0);
 }
-
 
 .btn_button {
   display: flex;
@@ -208,6 +202,7 @@ h3 {
   display: block;
   color: rgb(255, 255, 255);
   text-shadow: 5px 5px 5px black;
+  font-weight: bold;
 }
 
 .nav:hover .dropdown-content {
@@ -215,8 +210,18 @@ h3 {
 }
 
 .dropdown-content > li > a:hover {
-  color: rgb(23, 91, 131);
-  text-shadow: 5px 5px 5px black;
+  color: rgb(129, 6, 6);
+  text-shadow: 5px 2px 2px black;
+}
+
+#links a{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+#links a:hover{
+  color: white;
 }
 
 /* ----------------------dropdown ende----------------------------- */
@@ -260,7 +265,9 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin-top: 150px;
+  color: white;
 }
+
 
 #about > img,
 #projects > img,
@@ -289,26 +296,24 @@ img {
 @media screen and (min-width: 1023px) and (max-width: 1199px) {
   h1 {
     align-content: center;
-
   }
 }
 .nav_desk {
-    display: flex;
+  display: flex;
   text-align: center;
-    justify-content: space-around;
-    color: red;
-    position: relative;
-    /* z-index: 200; */
-    font-size: 30px;
-    text-decoration: none;
-  }
-  .nav_desk > li {
-    list-style: none;
-  }
-  .nav_desk > li a {
-    color: white;
-    text-decoration: none;
-  } */
+  justify-content: space-around;
+  position: relative;
+  /* z-index: 200; */
+  font-size: 30px;
+  text-decoration: none;
+}
+.nav_desk > li {
+  list-style: none;
+}
+.nav_desk > li a {
+  color: white;
+  text-decoration: none;
+}
 
 /* @media screen and (min-width: 1200px) {
   .img_about {
@@ -326,3 +331,37 @@ img {
     position: fixed;
   }
 } */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  padding: 30px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Twitter */
+.fa-youtube {
+  background: #ff000d;
+  color: white;
+}
