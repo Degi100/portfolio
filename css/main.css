@@ -248,11 +248,12 @@ h2 {
   border: rgb(69, 150, 216) 2px solid;
 }
 
+
 #startpage > p,
 #about > p,
 #projects > p,
 #links > p {
-  padding: 5px;
+  padding: 10px;
   background-color: rgba(103, 151, 212, 0.322);
   font-size: 16px;
 }
@@ -266,6 +267,9 @@ h2 {
   align-items: center;
   margin-top: 150px;
   color: white;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
 }
 
 
@@ -274,15 +278,17 @@ h2 {
 #links > img {
   display: flex;
   flex-direction: column;
-  height: 150px;
-  width: 75px;
+  width: 295px;
   border: 2px rgba(110, 136, 192, 0.671) solid;
-  border-radius: 20px;
+  border-radius: 50%;
+  padding: 15px;
+ ;
 }
 
 #projects > img {
   height: 300px;
   width: 400px;
+  margin: 15px;
 }
 
 .content > p {
