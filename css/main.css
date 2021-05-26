@@ -29,7 +29,7 @@ body {
 
 }
 
-.header > .img_about {
+.header >.img_about {
   display: flex;
   background-image: url(/itsme.png);
   width: 100%;
@@ -38,12 +38,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  z-index: 1;
+  
 
 }
 
 h1 {
   margin-top: 10px;
+  width: 100%;
   margin-left: 20px;
   font-family: "Russo One";
   color: rgb(255, 255, 255);
@@ -64,16 +65,14 @@ h3 {
   padding: 0px;
   margin-top: -50px;
   font-family: arial;
-  background-color: rgba(66, 151, 190, 0.295);
   width: 100%;
 
-  
 }
 
 /* ---------------------dropdown Menü----------------------------------------- */
 .nav_res {
   display: flex;
-  margin-left: 170px;
+  margin-left: 190px;
   margin-top: 120px;
   justify-content: center;
   position: fixed;
@@ -82,19 +81,26 @@ h3 {
 
 }
 
-.nav_desk {
-  display: none;
+.dropdown-content li > a::after{
+        font-family: FontAwesome;
+        content: "\f103";
+        font-size: 0.5 rem;
+        
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 .main{
-  margin-top: -130px;
+  margin-top: -120px;
 }
 
   .nav_res {
-    margin-left: 190px;
+    display:none;
   }
 
+  .header{
+    position:fixed;
+    width: 100%
+  }
   .header > .img_about {
     height: 200px;
   }
@@ -110,22 +116,25 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    position: relative;
     z-index: 200;
     font-family: "Russo One";
     font-size: 40px;
     text-decoration: none;
     padding: 16px;
+
   }
 
   .nav_desk > li {
     list-style: none;
-  }
+    margin-top: 100px;
+   }
 
   .nav_desk > li a {
     color: rgb(255, 255, 255);
     text-shadow: 5px 5px 5px rgb(20, 75, 126);
     text-decoration: none;
+    position: fixed;
+
   }
 
   .nav_desk > li a:hover {
@@ -180,7 +189,7 @@ h3 {
   font-size: 30px;
   position: absolute;
   background-color: #018dff71;
-  min-width: auto;
+  min-width: max-content;
   padding: 10px;
   margin-right: 90px;
   z-index: 2;
@@ -280,7 +289,7 @@ img {
 @media screen and (min-width: 1023px) and (max-width: 1199px) {
   h1 {
     align-content: center;
-    font-size: 100px;
+
   }
 }
 .nav_desk {
