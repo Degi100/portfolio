@@ -291,6 +291,14 @@ h2 {
   margin: 15px;
 }
 
+#projects > a{
+  color: white;
+}
+
+#projects > a:hover{
+  color: rgb(158, 12, 12);
+}
+
 .content > p {
   padding: 10px;
 }
